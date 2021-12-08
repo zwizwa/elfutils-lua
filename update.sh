@@ -10,7 +10,7 @@ gensym.h \
 os_linux.h \
 linux/elfutils_lua51.c \
 linux/elfutils_tags.h \
-lua/lib/elfutils.lua; do
+lua/elfutils/init.lua; do
     here_file=$(basename $file)
     echo $here_file
     cp -a $UC_TOOLS/$file .
