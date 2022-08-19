@@ -76,7 +76,9 @@ local function die_unpack_memoize(die, nodes)
    -- 'children' but the structure is deep enough already.
 
    node.tag = inv_DW_TAG[C.die_tag(die)]
-   assert(node.tag)
+   if not node.tag then
+      log("WARNING: bad tag: " .. (C.die_tag(die) or nil) .. "\n")
+   end
 
    local attrs = node
    nodes[id] = node
