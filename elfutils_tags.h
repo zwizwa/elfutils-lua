@@ -48,6 +48,7 @@
     m(location)                                 \
     m(decl_file)                                \
     m(decl_line)                                \
+    m(decl_column)                              \
     m(type)                                     \
     m(data_member_location)                     \
     m(sibling)                                  \
