@@ -71,5 +71,6 @@
     m(GNU_all_tail_call_sites)                  \
     m(GNU_all_call_sites)                       \
     m(GNU_macros)                               \
+    m(specification)                            \
 
 #endif
