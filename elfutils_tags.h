@@ -31,6 +31,7 @@
     m(unspecified_parameters)                   \
     m(GNU_call_site)                            \
     m(GNU_call_site_parameter)                  \
+    m(atomic_type)                              \
 
 #define FOR_DW_AT(m)                            \
     m(producer)                                 \
