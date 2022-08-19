@@ -3,6 +3,7 @@
 # This repository is just a wrapper for convenient packaging.
 set -e
 cd $(dirname $0)
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
 UC_TOOLS=/i/exo/uc_tools
 for file in \
 uc_tools_config.h \
@@ -20,4 +21,4 @@ done
 # try to build it
 gcc -c elfutils_lua51.c -I/usr/include/lua5.1
 git commit -am 'update from uc_tools'
-git push
+git push origin $BRANCH:$BRANCH
